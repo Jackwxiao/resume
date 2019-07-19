@@ -1,0 +1,31 @@
+.loading{
+  width: 200px; height: 200px;
+  position: relative;
+}
+.loading::before,.loading::after{
+  content:'';
+  position: absolute;
+  width: 10px; height: 10px;
+  background: #161414;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+  margin: auto;
+  animation: s 2s linear infinite;//线性变化
+}
+.loading::after{
+  animation-delay: 0.75s;//延迟
+}
+
+@keyframes s{
+  0%{
+    width: 0; height: 0;
+    opacity: 1;//开始时透明度
+  }
+  100%{
+    width: 100px; height: 100px;
+    opacity: 0;//结束时透明度
+  }
+}
