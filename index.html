@@ -25,34 +25,44 @@
 	<div id ="sitewelcome" class="site-welcome active">
 	<div class="loading"></div>
 	</div>
-	<div class="topNavBar">
+	<div id="topNavBar" class="topNavBar">
 		<div class="topNavBar-inner clearfix">
 		   <a class="logo" href="#" alt="logo" style="float: left;">
 			<span class="rs">RS</span>
 			<span class="card">card</span>
 		   </a>
-		   <nav style="float: right;">
+		   <nav class="menu" style="float: right; cursor: pointer;">
 			<ul class="clearfix">
 			  <li>		
-				  <a href="#">关于</a>
+				  <a href="#siteAbout">关于</a>
 			  </li>
 			  <li>
-				  <a href="#">技能</a>
+				  <a href="#siteSkills">技能</a>
 			  </li>
 			  <li>
-				  <a href=“#”>作品</a>
+			          <a href="#siteWorks">作品</a>
+                             <ul class="submenu">
+                                 <li>作品1</li>
+			         <li>作品2</li>
+			         <li>作品3</li>
+			     </ul> 
 			  </li>
+                          <li>
+			          <a href="#">博客</a>
+                             <ul class="submenu">
+                                 <li>博客1</li>
+			         <li>博客2</li>
+			         <li>博客3</li>
+			     </ul>
+			 </li>
 			  <li>
-				  <a href=“#”>博客</a>
+				  <a href="#">日历</a>
+				</li>
+                          <li>
+				  <a href="#">联系方式</a>
 				</li>
 			  <li>
-				  <a href=“#”>日历</a>
-				</li>
-              <li>:Q
-				  <a href=“#”>联系方式</a>
-				</li>
-			  <li>
-				  <a href=“#”>其他</a>
+				  <a href="#">其他</a>
 				</li>
 		  </ul>
 		</nav>
@@ -62,7 +72,7 @@
 		<div class="mask"></div>
 	</div>
 	<main>
-	  <div class= "userCard">
+	  <div id="siteAbout" class= "userCard">
 		  <div class="pictureAndText clearfix">
             <div class="picture">
 		<img src="./img/touxiang.jpg" width=299 height=347 alt="头像">
@@ -89,12 +99,12 @@
 		</div>
 	</div>
 		<footer class="media">
-			<a href="#" target=_blank>
+			<a href="https://weibo.com/5933760743/profile?topnav=1&wvr=6&is_all=1" target=_blank>
 		       <svg class="icon" aria-hidden="true">
 				   <use xlink:href="#icon-weibo"></use>
 			   </svg>
 			</a>
-			<a href="#" target=_blank>
+			<a href="https://github.com/WUXIAOd/resume" target=_blank>
 			   <svg class="icon" aria-hidden="true">
 				    <use xlink:href="#icon-github"></use>
 			   </svg>
@@ -104,7 +114,7 @@
 					<use xlink:href="#icon-weixin"></use>
 				</svg>
 			</a>   
-			<a href="#">
+			<a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1291383707&website=www.oicqzone.com" target=_blank>
 				<svg class="icon" aria-hidden="true">
 					<use xlink:href="#icon-11qq"></use>
 				</svg>
@@ -119,7 +129,7 @@
  <br>能力：熟悉前端开发、Rails开发、Node.js开发以及一些前端相关知识和领域。
 	</p>
      </main>
-     <section class="skills">
+     <section id="siteSkills" class="skills">
 	     <h2>我的技能</h2>
 	     <ol class="clearfix">
 			<li>
@@ -160,7 +170,7 @@
 			</li>	
 		</ol>
      </section>
-     <section class="portfolio">
+     <section id= "siteWorks" class="portfolio">
 	     <h2>作品集</h2>
 	     <nav>
 		     <ol class="clearfix">
@@ -197,9 +207,38 @@
 	     </div>
      </section>
            <script>
-		   setTimeout(function(){
-		      sitewelcome.classList.remove('active')
-		   },1500)
+	    setTimeout(function(){
+	     sitewelcome.classList.remove('active')
+	         },1500)
+            window.onscroll = function(xxxx){
+             if(window.scrollY > 0){
+	      topNavBar.classList.add('sticky')
+  	     }else{
+	    topNavBar.classList.remove('sticky')
+	     }
+              }
+      
+          let liTags = document.querySelectorAll('nav.menu > ul > li')
+          for(let i=0; i<liTags.length; i++){
+          liTags[i].onmouseenter = function(x){
+          x.currentTarget.classList.add('active')
+           }
+          liTags[i].onmouseleave = function(x){
+          x.currentTarget.classList.remove('active')
+        }
+        }
+
+        let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+          for(let i=0; i<aTags.length; i++){
+            aTags[i].onclick = function(x){
+     	     x.preventDefault()
+ 	      let a = x.currentTarget
+	       let href= a.getAttribute('href')
+	        let element = document.querySelector(href)
+	         let top = element.offsetTop
+	     window.scrollTo(0, top - 80)
+    	     }	     
+           }
 	   </script>
 	</body>
 </html>
