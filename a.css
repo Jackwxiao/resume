@@ -6,7 +6,26 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal;}
 ul,ol{list-style: none;}
 .userCard .text hr { margin: 20px 0;}
 .clearfix::after{ content: '';display: block;clear: both;}
-.topNavBar { padding: 20px 0 20px 0; transition: all 0.5s; position: fixed;top: 0; left: 0;width:100%;color: #b7b7b7; }
+
+[data-x].active{
+   outline: 10px solid red;
+}
+[data-x].offset{
+   transform: translateY(100px);
+}
+[data-x]{
+   transform: translateY(0);
+   transition: all 0.5s;
+}
+@keyframes slideUp{
+   0%{
+   transform: translateY(-30px);
+   }
+   100%{
+   transform: translateY(0);
+   }
+}
+.topNavBar { padding: 20px 0 20px 0; transition: all 0.5s; position: fixed;top: 0; left: 0;width:100%;color: #b7b7b7;transition: all 0.5s;}
 .topNavBar.sticky{background: white;padding:10px 0;z-index: 1; box-shadow:0 0 10px rgba(0,0,0,0.5);color: #3d4451; }
 .topNavBar-inner {padding: 0 16px; }
 .topNavBar nav { padding-top: 5px; }
@@ -14,7 +33,8 @@ ul,ol{list-style: none;}
 .topNavBar nav > ul > li {position:relative; float: left; margin-left: 17px; margin-right: 17px;}
 .topNavBar nav > ul > li > a {font-size: 12px;color: inherit; font-weight: bold; border-bottom: 3px solid transparent; border-top: 3px solid transparent; padding-top: 5px; padding-bottom: 5px;display: block;position: relative;}
 
-.topNavBar nav > ul > li.active > a::after { content:'';display: block; position:absolute; top: 100%; left: 0;width:100%;background: #e06567; height:3px;animation:menuSlide 0.3s}
+.topNavBar nav > ul > li.active > a::after,
+.topNavBar nav > ul > li.highlight > a::after{ content:'';display: block; position:absolute; top: 100%; left: 0;width:100%;background: #e06567; height:3px;animation:menuSlide 0.3s}
 @keyframes menuSlide{
     0%{width: 0;}
     100%{width: 100%;}
@@ -45,6 +65,7 @@ ul,ol{list-style: none;}
 .userCard dl dd{float: left;padding: 5px 0;}
 .userCard dl dt{width: 30%;font-weight: bold;}
 .userCard dl dd {width: 70%;color: #9da0a7;}
+
 .userCard > footer.media{ background: #E6686A;text-align: center; }
 .userCard > footer.media > a{ display: inline-block; width: 40px; line-height: 30px;padding: 5px 0;border-radius: 50%; margin: 16px;}
 .userCard > footer.media > a:hover{background: #CF5D5F;}
@@ -53,6 +74,7 @@ body > main { margin-top: -340px}
 body > main .downloadResume-wrapper{text-align: center;}
 body > main .downloadResume{font-size: 15px;line-height: 16px;padding: 21px 55px; border: 1px solid #cdcfd1;background: #efefef;display: inline-block; border-radius: 2px;color: #3d4451;font-weight: bold; margin: 33px;transition: box-shadow 0.4s;}
 body > main .downloadResume:hover{box-shadow: 0px 4px 10px 0px rgba(61,68,81,0.5);}
+
 .selfIntroduction{max-width: 940px;margin-left: auto;margin-right: auto;text-align: center; font-family: 楷体;line-height: 1.8;font-weight: bold;}
 section.skills,
 section.portfolio{max-width: 940px;margin-left: auto;margin-right: auto; margin-top: 65px;}
@@ -62,9 +84,14 @@ section.skills h3 {font-size: 15px;line-height: 1.1;padding-right: 40px;}
 section.skills > ol{background: white; box-shadow: 0px 4px 10px 0px rgba(61,68,81,0.5); padding: 42px 50px 10px;margin-top: 30px;}
 section.skills > ol >li{float: left; width: 48%; box-sizing: border-box;}
 section.skills > ol >li:nth-child(even) {float: right;}
-section.skills .progressBar{ height: 5px;background: rgb(250,225,225); border-radius: 2px;margin: 4px 0 40px;}
-section.skills .progressBar> .progress{ height: 100%; background: rgb(232,103,107); border-radius: 2px; width: 70%;}
-section.portfolio{text-align: center;}
+
+section.skills .progressBar{ height: 5px;background: rgb(250,225,225); border-radius: 2px;margin: 4px 0 40px;overflow: hidden;}
+section.skills .progressBar> .progress{ height: 100%; background: rgb(232,103,107); border-radius: 2px; width: 70%; transform: translateX(0); transition: all 1s;}
+section.skills.offset .progress{
+   transform: translateX(-100%);
+}
+
+section.portfolio{text-align: center;margin-bottom:100px;}
 section.portfolio > nav{text-align: center;}
 section.portfolio > nav > ol { /*border: 1px solid red;*/margin: 0 auto;display: inline-block;vertical-align: top;}
 section.portfolio > nav > ol > li{float: left; margin-left: 40px; cursor: pointer; /*改变鼠标click样式*/}
