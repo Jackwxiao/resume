@@ -7,24 +7,13 @@ ul,ol{list-style: none;}
 .userCard .text hr { margin: 20px 0;}
 .clearfix::after{ content: '';display: block;clear: both;}
 
-[data-x].active{
-   outline: 10px solid red;
-}
-[data-x].offset{
-   transform: translateY(100px);
-}
-[data-x]{
-   transform: translateY(0);
-   transition: all 0.5s;
-}
-@keyframes slideUp{
-   0%{
-   transform: translateY(-30px);
-   }
-   100%{
-   transform: translateY(0);
-   }
-}
+.icon {width: 1em;height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
+
+[data-x].active{outline: 10px solid red;}
+[data-x].offset{transform: translateY(100px);}
+[data-x]{transform: translateY(0);transition: all 0.5s;}
+@keyframes slideUp{0%{transform: translateY(-30px);}100%{transform: translateY(0)}}
+
 .topNavBar { padding: 20px 0 20px 0; transition: all 0.5s; position: fixed;top: 0; left: 0;width:100%;color: #b7b7b7;transition: all 0.5s;}
 .topNavBar.sticky{background: white;padding:10px 0;z-index: 1; box-shadow:0 0 10px rgba(0,0,0,0.5);color: #3d4451; }
 .topNavBar-inner {padding: 0 16px; }
@@ -35,16 +24,11 @@ ul,ol{list-style: none;}
 
 .topNavBar nav > ul > li.active > a::after,
 .topNavBar nav > ul > li.highlight > a::after{ content:'';display: block; position:absolute; top: 100%; left: 0;width:100%;background: #e06567; height:3px;animation:menuSlide 0.3s}
-@keyframes menuSlide{
-    0%{width: 0;}
-    100%{width: 100%;}
-    }
+@keyframes menuSlide{0%{width: 0;}100%{width: 100%;}}
 .topNavBar .submenu{ display: none; position: absolute;right:0;top:100%;background: white;color:#3d4451;box-shadow:0 0 5px rgba(0,0,0,0.5);}
 .topNavBar li.active> .submenu{display: block;animation: submenuSlide .3s;}
-@keyframes submenuSlide{
-   0%{margin-right: 100%;}
-   100%{margin-right: 0%;}
-     }
+@keyframes submenuSlide{0%{margin-right: 100%;}100%{margin-right: 0%;}}
+
 .topNavBar .submenu > li{white-space:nowrap; padding: 5px 10px;}
 .topNavBar .submenu > li:hover{background:#4EE2FF;}
 
@@ -108,15 +92,5 @@ section.portfolio .works > .big,
 section.portfolio .works > .small{ position: absolute;}
 section.portfolio .swiper-container {width: 668px;height: 501px;}
 .swiper-button-prev,
-.swiper-button-next{
-   background-color: white;
-   width:64px;
-   height:64px;
-   right: 100%;
-   left: auto;
-   border-radius: 50px;
-}
-section.portfolio .swiper-button-next{
-   right:auto;
-   left: 100%;
-}
+.swiper-button-next{background-color: white;width:64px;height:64px;right: 100%;left: auto;border-radius: 50px;}
+section.portfolio .swiper-button-next{right:auto;left: 100%;}
