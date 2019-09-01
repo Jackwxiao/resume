@@ -16,16 +16,16 @@
   animation: s 2s linear infinite;//线性变化
 }
 .loading::after{
-  animation-delay: 0.75s;//延迟
+  animation-delay: 0.75s;
 }
 
 @keyframes s{
   0%{
     width: 0; height: 0;
-    opacity: 1;//开始时透明度
+    opacity: 1;
   }
   100%{
     width: 100px; height: 100px;
-    opacity: 0;//结束时透明度
+    opacity: 0;
   }
 }

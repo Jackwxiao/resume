@@ -1,292 +1,322 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>吴潇的个人简历</title>
-		<link rel="stylesheet" href="./a.css">
-		<link rel="stylesheet" href="./loading.css">
-		<script src="//at.alicdn.com/t/font_1268253_yqwodx1j98.js"></script>
-	    <style type="text/css">
-        .icon{
-             width: 1em; height: 1em;
-             vertical-align: -0.15em;
-             fill: currentColor;
-             overflow: hidden;
-	 }
-        .site-welcome{
-	     display: none;position: fixed;top: 0;left: 0; width: 100%;height: 100%;
-             background: #888;z-index:1;
-             justify-content: center;align-items: center;
-	}
-	.site-welcome.active{
-	     display: flex;
-	}
-    </style>
-	<body>
-	<div id ="sitewelcome" class="site-welcome">
-	<div class="loading"></div>
+
+<head>
+	<title>吴潇的个人简历</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<link rel="stylesheet" href="./a.css">
+	<script src="//at.alicdn.com/t/font_1268253_yqwodx1j98.js"></script>
+	<style type="text/css">
+		.icon {
+			width: 1em;
+			height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+
+		.site-welcome {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #888;
+			z-index: 1;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.site-welcome.active {
+			display: flex;
+		}
+	</style>
+
+<body>
+	<div id="sitewelcome" class="site-welcome">
+		<div class="loading"></div>
 	</div>
 	<div id="topNavBar" class="topNavBar">
 		<div class="topNavBar-inner clearfix">
-		   <a class="logo" href="#" alt="logo" style="float: left;">
-			<span class="rs">RS</span>
-			<span class="card">card</span>
-		   </a>
-		   <nav class="menu" style="float: right; cursor: pointer;">
-			<ul class="clearfix">
-			  <li>		
-				  <a href="#siteAbout">关于</a>
-			  </li>
-			  <li>
-				  <a href="#siteSkills">技能</a>
-			  </li>
-			  <li>
-			          <a href="#siteWorks">作品</a>
-                             <ul class="submenu">
-                                 <li>作品1</li>
-			         <li>作品2</li>
-			         <li>作品3</li>
-			     </ul> 
-			  </li>
-                          <li>
-			          <a href="#">博客</a>
-                             <ul class="submenu">
-                                 <li>博客1</li>
-			         <li>博客2</li>
-			         <li>博客3</li>
-			     </ul>
-			 </li>
-			  <li>
-				  <a href="#">日历</a>
-				</li>
-                          <li>
-				  <a href="#">联系方式</a>
-				</li>
-			  <li>
-				  <a href="#">其他</a>
-				</li>
-		  </ul>
-		</nav>
-	    </div>
-	</div>
-    <div class="banner">
-		<div class="mask"></div>
-	</div>
-	<main>
-	  <div data-x id="siteAbout" class= "userCard">
-		  <div class="pictureAndText clearfix">
-            <div class="picture">
-		<img src="./img/touxiang.png" width=299 height=347 alt="头像">
-	    </div>
-	    <div class="text">
-		        <span class="welcome">Hello
-					<span class="triangle"></span>
-				</span>
-		        <h1>吴 潇</h1>
-		        <p>前端开发工程师</p>
-		        <hr>
-                <dl>
-		          	<dt>年龄</dt>
-		      		<dd>23</dd>
-		      		<dt>性别</dt>
-		      		<dd>男</dd>
-		     		<dt>所在地</dt>
-		      		<dd>湖南</dd>
-		      		<dt>邮箱</dt>
-		      		<dd>1291383707@qq.com</dd>
-		      		<dt>手机</dt>
-              		<dd>15115809369</dd>
-		    	</dl>
+			<a class="logo" href="#" alt="logo" style="float: left;">
+				<span class="rs">WX</span>
+				<span class="card">吴潇</span>
+			</a>
+			<nav class="menu" style="float: right; cursor: pointer;">
+				<ul class="clearfix">
+					<li><a href="#siteAbout">关于</a>
+					</li>
+					<li><a href="#siteSkills">技能</a>
+					</li>
+					<li><a href="#siteWorks">作品</a>
+						<ul class="submenu">
+							<li><a href="https://wuxiaod.github.io/bookmark/" target=_blank>作品1</a></li>
+							<li><a href="https://wuxiaod.github.io/canvas-demo/index.html" target=_blank>作品2</a></li>
+							<li><a href="https://wuxiaod.github.io/resume/" target=_blank>作品3</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.jianshu.com/u/2e08d438d6a5" target=_blank>博客</a>
+						<ul class="submenu">
+							<li><a href="https://www.jianshu.com/p/0fb3ac1b79ea" target=_blank>博客1</a></li>
+							<li><a href="https://www.jianshu.com/p/22637f20a5e7" target=_blank>博客2</a></li>
+							<li><a href="https://www.jianshu.com/p/1938d3c995d2" target=_blank>博客3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">日历</a>
+					</li>
+					<li>
+						<a href="#">联系方式</a>
+					</li>
+					<li>
+						<a href="#">其他</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
-		<footer class="media">
-			<a href="https://weibo.com/5933760743/profile?topnav=1&wvr=6&is_all=1" target=_blank>
-		       <svg class="icon" aria-hidden="true">
-				   <use xlink:href="#icon-weibo"></use>
-			   </svg>
-			</a>
-			<a href="https://github.com/WUXIAOd/resume" target=_blank>
-			   <svg class="icon" aria-hidden="true">
-				    <use xlink:href="#icon-github"></use>
-			   </svg>
-			</a>
-			<a href="https://i.loli.net/2019/07/21/5d33c4b59d22844311.jpg" target=_blank>
-				<svg class="icon" aria-hidden="true">
-					<use xlink:href="#icon-weixin"></use>
-				</svg>
-			</a>   
-			<a href="https://i.loli.net/2019/07/21/5d33c5ece935325257.jpg" target=_blank>
-				<svg class="icon" aria-hidden="true">
-					<use xlink:href="#icon-11qq"></use>
-				</svg>
-			</a>   
-		</footer>
+	<div class="banner">
+		<div class="mask"></div>
 	</div>
-	<p class="downloadResume-wrapper">
-	<a class="downloadResume" href="./前端吴潇15115809369.pdf" target="_blank" download>下载 PDF 简历 </a>
-	</p>
-	<p class="selfIntroduction">
-     吴潇，本科2015年毕业于南华大学，前端初级工程师；
- <br>能力：熟悉前端开发、Rails开发、Node.js开发以及一些前端相关知识和领域。
-	</p>
-     </main>
-     <section data-x id="siteSkills" class="skills">
-	     <h2>我的技能</h2>
-	     <ol class="clearfix">
-			<li>
-			<h3>HTML 5 &amp; CSS 3</h3>
-			<div class="progressBar">
-				<div class="progress" style="width: 75%;"></div>
+    <main>
+		<div data-x id="siteAbout" class="userCard">
+			<div class="pictureAndText clearfix">
+				<div class="picture">
+					<img src="./img/touxiang.png" width=299 height=347 alt="头像">
+				</div>
+				<div class="text">
+					<span class="welcome">Hi
+						<span class="triangle"></span>
+					</span>
+					<h1>吴 潇</h1>
+					<p>前端开发工程师</p>
+					<hr>
+					<dl>
+						<dt>年龄</dt>
+						<dd>23</dd>
+						<dt>性别</dt>
+						<dd>男</dd>
+						<dt>所在地</dt>
+						<dd>湖南</dd>
+						<dt>邮箱</dt>
+						<dd>1291383707@qq.com</dd>
+						<dt>手机号码</dt>
+						<dd>15115809369</dd>
+					</dl>
+				</div>
 			</div>
-		    </li>
+			<footer class="media">
+				<a href="https://weibo.com/5933760743/profile?topnav=1&wvr=6&is_all=1" target=_blank>
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-weibo"></use>
+					</svg>
+				</a>
+				<a href="https://github.com/WUXIAOd/resume" target=_blank>
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
+				<a href="https://i.loli.net/2019/07/21/5d33c4b59d22844311.jpg" target=_blank>
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-weixin"></use>
+					</svg>
+				</a>
+				<a href="https://i.loli.net/2019/07/21/5d33c5ece935325257.jpg" target=_blank>
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-11qq"></use>
+					</svg>
+				</a>
+			</footer>
+		</div>
+		<p class="downloadResume-wrapper">
+			<a class="downloadResume" href="./前端吴潇15115809369.pdf" target="_blank" download>请点击下载查看 PDF 简历 </a>
+		</p>
+		<p class="selfIntroduction">
+			吴潇，本科2015年毕业于南华大学，前端开发工程师；
+			<br>能力：熟悉前端开发、Rails开发、Node.js开发以及一些前端相关知识和领域。
+		</p>
+	</main>
+	<section data-x id="siteSkills" class="skills">
+		<h2>我的技能</h2>
+		<ol class="clearfix">
 			<li>
-			<h3>JavaScript</h3>
-			<div class="progressBar">
-				<div class="progress" style="width: 85%;"></div>
-			</div>
-		    </li>
-			<li>
-			<h3>jQuery</h3>
-			<div class="progressBar">
-				<div class="progress" style="width：70%;"></div>
-			</div>
-			</li>
-			<li>
-			<h3>Vue</h3>
-			<div class="progressBar">
-				<div class="progress" style="width: 65%;"></div>
-			</div>
-			</li>
-			<li>
-			<h3>React</h3>
-			<div class="progressBar">
-				<div class="progress" style="width；100%;"></div>
-			</div>
-			</li>
-			<li>
-			<h3>HTTP</h3>
+				<h3>HTML 5 &amp; CSS 3</h3>
 				<div class="progressBar">
-				<div class="progress" style="width: 50%;"></div>
-			</div>
-			</li>	
+					<div class="progress" style="width: 75%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>JavaScript</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 85%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>jQuery</h3>
+				<div class="progressBar">
+					<div class="progress" style="width：70%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>Vue</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 65%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>React</h3>
+				<div class="progressBar">
+					<div class="progress" style="width；100%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>HTTP</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 50%;"></div>
+				</div>
+			</li>
 		</ol>
-     </section>
-     <section data-x id= "siteWorks" class="portfolio">
-	     <h2>作品集</h2>
-	     <nav>
-		     <ol class="clearfix">
-			     <li id="portfolio1">全部</li>
-			     <li id="portfolio2">框架</li>
-			     <li id="portfolio3">原生 JS&amp;CSS</li>
-			 </ol>
-		    <div id="portfolioBar" class="bar state-1">
+	</section>
+	<section data-x id="siteWorks" class="portfolio">
+		<h2>作品集</h2>
+		<nav>
+			<ol class="clearfix">
+				<li id="portfolio1">全部</li>
+				<li id="portfolio2">框架</li>
+				<li id="portfolio3">原生 JS&amp;CSS</li>
+			</ol>
+			<div id="portfolioBar" class="bar state-1">
 				<div class="bar-inner"></div>
 			</div>
-		 </nav>
-		 <script>
-			 portfolio1.onclick= function(){
-				 portfolioBar.className = 'bar state-1'
-			 }
-			 portfolio2.onclick= function(){
-				 portfolioBar.className = 'bar state-2'
-			 }
-			 portfolio3.onclick= function(){
-				 portfolioBar.className = 'bar state-3'
-			 }
-		 </script>
-		 
-	     <div class="works" style="height: 597px;">
-	       <div class="big" style="top: 0; left: 0;">
-			   <img src="./img/zp1.jpg" alt="作品一">
-		   </div>
-	       <div class="small" style="top: 0; left: 637px;">	
-			   <img src="./img/zp2.jpg" alt="作品二">
-		   </div>
-	       <div class="small" style="top :298px; left: 637px;">
-				<img src="./img/zp3.jpg" alt="作品三">
-		   </div>
-	     </div>
-     </section>
+		</nav>
+		<script>
+			portfolio1.onclick = function () {
+				portfolioBar.className = 'bar state-1'
+			}
+			portfolio2.onclick = function () {
+				portfolioBar.className = 'bar state-2'
+			}
+			portfolio3.onclick = function () {
+				portfolioBar.className = 'bar state-3'
+			}
+		</script>
+	<!-- Slider main container -->
+	<div class="swiper-container">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<img src="./img/项目截图/大大画板.jpg" class="swiper-slide">
+			<img src="./img/项目截图/实用导航页.jpg" class="swiper-slide">
+			<img src="./img/项目截图/轮播.jpg" class="swiper-slide">
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	
+	
+	</section>
 
-	   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>    
-	   <script>
-	// 添加 offset 类
-            let specialTags = document.querySelectorAll('[data-x]')
-             for(let i=0; i<specialTags.length; i++){
-	      specialTags[i].classList.add('offset')
-	     }
-              
-             findClosest()
-             window.onscroll = function(x){
-             if(window.scrollY > 0){
-	       topNavBar.classList.add('sticky')
-  	     }else{
-	       topNavBar.classList.remove('sticky')
-	     }
-             findClosest()
-	     }
-            
-             function findClosest(){
-	        let specialTags = document.querySelectorAll('[data-x]')
-		let minIndex = 0
-	        for(let i=1; i<specialTags.length; i++){
-		      if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
-		     minIndex = i
-		      }
-	      }
-		     //minIndex 就是离窗口最近的元素
-         specialTags[minIndex].classList.remove('offset')
-             let id = specialTags[minIndex].id
-             let a = document.querySelector('a[href="#'+ id + '"]')
-             let li = a.parentNode
-             let brothersAndMe = li.parentNode.children
-             for( let i =0 ;i < brothersAndMe.length; i++){
-	         brothersAndMe[i].classList.remove('highlight')
-	     }
-             li.classList.add('highlight')
-	     } 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
-          let liTags = document.querySelectorAll('nav.menu > ul > li')
-            for(let i=0; i<liTags.length; i++){
-              liTags[i].onmouseenter = function(x){
-               x.currentTarget.classList.add('active')
-                }
-                liTags[i].onmouseleave = function(x){
-                  x.currentTarget.classList.remove('active')
-             }
-            } 
-          let aTags = document.querySelectorAll('nav.menu > ul > li > a')
-            function animate(time) {
-	         requestAnimationFrame(animate);
-                 TWEEN.update(time);
-	    }
-            requestAnimationFrame(animate);
-         
-           for(let i=0; i<aTags.length; i++){
-            aTags[i].onclick = function(x){
-     	     x.preventDefault()
- 	      let a = x.currentTarget
-	       let href= a.getAttribute('href')
-	        let element = document.querySelector(href)
-	         let top = element.offsetTop
-              
-             let currentTop = window.scrollY
-	       let targetTop = top -80
-		    let s = targetTop - currentTop //路程
-                var coords = { y : currentTop}; // 起始位置
-		    var t = Math.abs((s/100)*300) // 时间
-		    if(t>500){ t =500 }
-                  var tween = new TWEEN.Tween(coords) // 起始位置
-                   .to({ y: targetTop}, t) //结束为止和时间
-                 .easing(TWEEN.Easing.Quadratic.InOut) //缓动类型
-               .onUpdate(function(){
-	      window.scrollTo(0,coords.y) //更新界面
-	     })
-             .start();  //开始缓动
-	    } 	     
-           }
+	<script>
+  var mySwiper = new Swiper('.swiper-container', {
+       loop: true,
+	  // If we need pagination
+	  pagination: {
+		  el: '.swiper-pagination',
+	  },
 
-	   </script>
-	</body>
+	  // Navigation arrows
+	  navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+	  },
+  })
+	</script>
+	<script>
+		// 添加 offset 类
+		let specialTags = document.querySelectorAll('[data-x]')
+		for (let i = 0; i < specialTags.length; i++) {
+			specialTags[i].classList.add('offset')
+		}
+
+		findClosest()
+		window.onscroll = function (x) {
+			if (window.scrollY > 0) {
+				topNavBar.classList.add('sticky')
+			} else {
+				topNavBar.classList.remove('sticky')
+			}
+			findClosest()
+		}
+
+		function findClosest() {
+			let specialTags = document.querySelectorAll('[data-x]')
+			let minIndex = 0
+			for (let i = 1; i < specialTags.length; i++) {
+				if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {
+					minIndex = i
+				}
+			}
+			//minIndex 就是离窗口最近的元素
+			specialTags[minIndex].classList.remove('offset')
+			let id = specialTags[minIndex].id
+			let a = document.querySelector('a[href="#' + id + '"]')
+			let li = a.parentNode
+			let brothersAndMe = li.parentNode.children
+			for (let i = 0; i < brothersAndMe.length; i++) {
+				brothersAndMe[i].classList.remove('highlight')
+			}
+			li.classList.add('highlight')
+		}
+
+		let liTags = document.querySelectorAll('nav.menu > ul > li')
+		for (let i = 0; i < liTags.length; i++) {
+			liTags[i].onmouseenter = function (x) {
+				x.currentTarget.classList.add('active')
+			}
+			liTags[i].onmouseleave = function (x) {
+				x.currentTarget.classList.remove('active')
+			}
+		}
+		let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+		function animate(time) {
+			requestAnimationFrame(animate);
+			TWEEN.update(time);
+		}
+		requestAnimationFrame(animate);
+
+		for (let i = 0; i < aTags.length; i++) {
+			aTags[i].onclick = function (x) {
+				x.preventDefault()
+				let a = x.currentTarget
+				let href = a.getAttribute('href')
+				let element = document.querySelector(href)
+				let top = element.offsetTop
+
+				let currentTop = window.scrollY
+				let targetTop = top - 80
+				let s = targetTop - currentTop //路程
+				var coords = { y: currentTop }; // 起始位置
+				var t = Math.abs((s / 100) * 300) // 时间
+				if (t > 500) { t = 500 }
+				var tween = new TWEEN.Tween(coords) // 起始位置
+					.to({ y: targetTop }, t) //结束为止和时间
+					.easing(TWEEN.Easing.Quadratic.InOut) //缓动类型
+					.onUpdate(function () {
+						window.scrollTo(0, coords.y) //更新界面
+					})
+					.start();  //开始缓动
+			}
+		}
+
+	</script>
+
+</body>
 
 </html>
-

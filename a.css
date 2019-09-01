@@ -42,11 +42,11 @@ ul,ol{list-style: none;}
 .topNavBar .submenu{ display: none; position: absolute;right:0;top:100%;background: white;color:#3d4451;box-shadow:0 0 5px rgba(0,0,0,0.5);}
 .topNavBar li.active> .submenu{display: block;animation: submenuSlide .3s;}
 @keyframes submenuSlide{
-     0%{margin-right: 100%;}
-     100%{margin-right: 0%;}
+   0%{margin-right: 100%;}
+   100%{margin-right: 0%;}
      }
 .topNavBar .submenu > li{white-space:nowrap; padding: 5px 10px;}
-
+.topNavBar .submenu > li:hover{background:#4EE2FF;}
 
 .topNavBar .logo {font-family: "Arial Black"; font-size: 24px; padding-top: 3px; padding-bottom: 4px;}
 .topNavBar .logo .rs{ color: #e6686a;margin-right: 4px;}
@@ -91,7 +91,7 @@ section.skills.offset .progress{
    transform: translateX(-100%);
 }
 
-section.portfolio{text-align: center;margin-bottom:100px;}
+section.portfolio{text-align: center;margin-bottom:100px;max-width: 720px;}
 section.portfolio > nav{text-align: center;}
 section.portfolio > nav > ol { /*border: 1px solid red;*/margin: 0 auto;display: inline-block;vertical-align: top;}
 section.portfolio > nav > ol > li{float: left; margin-left: 40px; cursor: pointer; /*改变鼠标click样式*/}
@@ -106,3 +106,17 @@ section.portfolio > nav .bar.state-3 .bar-inner{margin-left: 140px; width: 100px
 section.portfolio .works{position: relative; margin-bottom: 500px;}
 section.portfolio .works > .big,
 section.portfolio .works > .small{ position: absolute;}
+section.portfolio .swiper-container {width: 668px;height: 501px;}
+.swiper-button-prev,
+.swiper-button-next{
+   background-color: white;
+   width:64px;
+   height:64px;
+   right: 100%;
+   left: auto;
+   border-radius: 50px;
+}
+section.portfolio .swiper-button-next{
+   right:auto;
+   left: 100%;
+}
