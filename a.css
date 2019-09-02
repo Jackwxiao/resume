@@ -90,7 +90,8 @@ section.portfolio > nav .bar.state-3 .bar-inner{margin-left: 140px; width: 100px
 section.portfolio .works{position: relative; margin-bottom: 500px;}
 section.portfolio .works > .big,
 section.portfolio .works > .small{ position: absolute;}
+section.portfolio .mySlides{display: flex;justify-content: center;align-items: center;}
 section.portfolio .swiper-container {width: 668px;height: 501px;}
 .swiper-button-prev,
-.swiper-button-next{background-color: white;width:64px;height:64px;right: 100%;left: auto;border-radius: 50px;}
+.swiper-button-next{background-color: white;width:64px;height:64px;right: 100%;left: auto;border-radius: 50px;top: 59%;}
 section.portfolio .swiper-button-next{right:auto;left: 100%;}
