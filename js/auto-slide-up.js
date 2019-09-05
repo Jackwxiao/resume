@@ -5,13 +5,13 @@
         specialTags[i].classList.add('offset')
     }
 
-    findClosestAndRemoveoOffset()
+    findClosestAndRemoveOffset()
     window.addEventListener('scroll', function (x) {
-        findClosestAndRemoveoOffset()
+        findClosestAndRemoveOffset()
     })
 
     /*helper*/
-    function findClosestAndRemoveoOffset() {
+    function findClosestAndRemoveOffset() {
         let specialTags = document.querySelectorAll('[data-x]')
         let minIndex = 0
         for (let i = 1; i < specialTags.length; i++) {

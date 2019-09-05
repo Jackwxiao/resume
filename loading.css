@@ -13,7 +13,7 @@
   bottom:0;
   right: 0;
   margin: auto;
-  animation: s 2s linear infinite;//线性变化
+  animation:  2s linear infinite;/* 线性变化 */
 }
 .loading::after{
   animation-delay: 0.75s;
