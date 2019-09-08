@@ -189,13 +189,21 @@
 		</div>
 	</section>
 	<section data-x id="siteMessage" class="leaveMessages">
+        <style>
+		    input:invalid{
+				border: 1px dashed red;
+			}
+			input:valid{
+				border:1px solid black;
+			}
+		</style>
 		<h2>给我留言吧 :)</h2>
 		<ol id="messageList"></ol>
 		<form id="postMessageForm" style="width: 668px; margin: 32px auto;">
 			<label for="">姓名</label>
-			<input type="text" name="name">
+			<input type="text" name="name" required>
 			<label for="">内容</label>
-			<input type="text" name="content">
+			<input type="text" name="content" required>
 			<input type="submit" value="发表">
 		</form>
 	</section>
