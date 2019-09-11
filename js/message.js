@@ -1,5 +1,5 @@
 !function () {
-  var model = Model({ resoruceName: 'Message' })
+  var model = Model({ resourceName: 'Message' })
   var view = View('section.leaveMessage')
   var controller = Controller({
     messageList: null,

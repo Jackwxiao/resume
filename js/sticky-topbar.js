@@ -1,6 +1,6 @@
 !function () {
 
-    var view = view('#topNavBar')
+    var view = View('#topNavBar')
 
     var controller = {
         view: null,
