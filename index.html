@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" href="./a.css">
 	<script src="//at.alicdn.com/t/font_1268253_yqwodx1j98.js"></script>
-
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 <body>
 	<div id="topNavBar" class="topNavBar">
 		<div class="topNavBar-inner clearfix">
@@ -136,44 +136,78 @@
 	</section>
 	<section data-x id="siteWorks" class="portfolio">
 		<h2>作品集</h2>
-		<nav>
-			<ol class="clearfix">
-				<li id="portfolio1">全部</li>
-				<li id="portfolio2">框架</li>
-				<li id="portfolio3">原生 JS&amp;CSS</li>
+		<div class="works">
+			<ol>
+				<li>
+					<img src="./img/项目截图/cnode.jpg" alt="">
+					<div class="works1">	
+						<p><b>项目名：</b>Vue-cli、component、vue-router</p>
+						<p><b>描述：</b>使用Vue-cli脚手架快速搭建项目，使用女丝哦v后v滑雪
+							v比距哦是
+							司机电话v搜VS就子女哦似乎v死哦充值卡</p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img src="./img/项目截图/井字棋.jpg" alt="">
+					<div class="works1">
+						<p><b>项目名：</b></p>
+						<p><b>描述：</b></p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img src="./img/项目截图/画板.jpg" alt="">
+					<div class="works1">
+						<p><b>项目名：</b></p>
+						<p><b>描述：</b></p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img src="./img/项目截图/轮播.jpg" alt="">
+					<div class="works1">
+						<p><b>项目名：</b></p>
+						<p><b>描述：</b></p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+					
+				</li>
+				<li>
+					<img src="./img/项目截图/web navbar0.jpg" alt="">
+					<div class="works1">
+						<p><b>项目名：</b></p>
+						<p><b>描述：</b></p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img src="./img/项目截图/panda.jpg" alt="">
+					<div class="works1">
+						<p><b>项目名：</b></p>
+						<p><b>描述：</b></p>
+						<span>
+							<a href=""><b>预览链接</b></a>
+							<a href=""><b>源码链接</b></a>
+						</span>
+					</div>
+				</li>
 			</ol>
-			<div id="portfolioBar" class="bar state-1">
-				<div class="bar-inner"></div>
-			</div>
-		</nav>
-		<script>
-			portfolio1.onclick = function () {
-				portfolioBar.className = 'bar state-1'
-			}
-			portfolio2.onclick = function () {
-				portfolioBar.className = 'bar state-2'
-			}
-			portfolio3.onclick = function () {
-				portfolioBar.className = 'bar state-3'
-			}
-		</script>
-		<div id="mySlides" class="myslides">
-			<!-- Slider main container -->
-			<div class="swiper-container">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<img src="./img/项目截图/大大画板.jpg" class="swiper-slide">
-					<img src="./img/项目截图/实用导航页.jpg" class="swiper-slide">
-					<img src="./img/项目截图/轮播.jpg" class="swiper-slide">
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-			</div>
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			
 		</div>
 	</section>
 	<section data-x id="siteMessage" class="leaveMessages">
@@ -185,15 +219,15 @@
 				border:1px solid black;
 			}
 		</style>
-		<h2>给我留言吧 :)</h2>
-		<ol id="messageList"></ol>
+		<h2>留言板</h2>
 		<form id="postMessageForm" style="width: 668px; margin: 32px auto;">
-			<label for="">姓名</label>
-			<input type="text" name="name" required>
-			<label for="">内容</label>
-			<input type="text" name="content" required>
-			<input type="submit" value="发表">
+			<label for="">姓名：</label>
+			<input type="text" name="name" required style="height: 25px;">
+			<label for="" style="height: 25px;">内容：</label>
+			<input type="text" name="content" required style="height: 25px;">
+			<input type="submit" value="发表" style="height: 25px;">
 		</form>
+		<ol id="messageList"></ol>
 	</section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>

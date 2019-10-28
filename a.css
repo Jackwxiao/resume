@@ -1,9 +1,10 @@
 body{ background: #efefef;margin: 0; }
 a{ color: inherit; text-decoration: none; }
-*{ margin: 0; padding: 0;}
+*{ margin: 0; padding: 0;box-sizing:border-box;}
 hr{ height: 0; border: none; border-top: 1px solid #DEDEDE;}
 h1,h2,h3,h4,h5,h6{ font-weight: normal;}
 ul,ol{list-style: none;}
+img{width: 100%;}
 .userCard .text hr { margin: 20px 0;}
 
 .clearfix::after{ content: '';display: block;clear: both;}
@@ -75,29 +76,6 @@ section.skills > ol >li > p{padding-bottom:10px; }
 section.skills > ol >li{width: 48%; box-sizing: border-box;display:inline-block;}
 section.skills > ol >li:nth-child(even) {float: right;display:inline-block;}
 
-
-
-section.portfolio{text-align: center;margin-bottom:100px;max-width: 720px;}
-section.portfolio > nav{text-align: center;}
-section.portfolio > nav > ol { /*border: 1px solid red;*/margin: 0 auto;display: inline-block;vertical-align: top;}
-section.portfolio > nav > ol > li{float: left; margin-left: 40px; cursor: pointer; /*改变鼠标click样式*/}
-section.portfolio > nav > ol > li:nth-child(1)/*or :first-child*/{margin-left: 0;}
-section.portfolio > nav .bar{height: 5px;background:white;margin-top: 5px; margin-bottom: 35px; border-radius: 2px;}
-section.portfolio > nav{display: inline-block;vertical-align: top;margin-top: 32px;}
-section.portfolio > nav .bar-inner{height: 100%; /*和父元素等比变化*/background: #729B80;border-radius: 2px; /*边框设置为小圆角*/transition: all 0.5s; /*所有变化在0.5秒内完成*/}
-section.portfolio > nav .bar.state-1 .bar-inner{margin-left: 0;width:35px;}
-section.portfolio > nav .bar.state-2 .bar-inner{margin-left: 65px; width: 50px;}
-section.portfolio > nav .bar.state-3 .bar-inner{margin-left: 140px; width: 100px;}
-
-section.portfolio .works{position: relative; margin-bottom: 500px;}
-section.portfolio .works > .big,
-section.portfolio .works > .small{ position: absolute;}
-section.portfolio .mySlides{display: flex;justify-content: center;align-items: center;}
-section.portfolio .swiper-container {width: 668px;height: 501px;}
-.swiper-button-prev,
-.swiper-button-next{background-color: white;width:64px;height:64px;right: 100%;left: auto;border-radius: 50px;top: 59%;}
-section.portfolio .swiper-button-next{right:auto;left: 100%;}
-
 section.leaveMessages > ol{
    max-width: 668px;
    margin: 33px auto;
@@ -110,4 +88,28 @@ section.leaveMessages > ol >li{
    border-bottom: 5px solid #F0F0F0;
    font-family: Arial;
    color: #009933; 
+}
+.works{
+   margin-top: 30px;
+   margin-bottom: 50px;
+   background-color: #ffffff;
+   box-shadow: 0px 1px 5px 0px rgba(61,68,81,0.5);
+}
+.works >ol{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+.works > ol>li{
+   box-sizing: border-box;
+   width: 48%;
+   padding: 20px;
+   display: flex;
+}
+.works1>p,span{
+   padding: 5px;
+}
+.works>ol>li>img{
+   width: 200px;
+   height: 200px;
 }

@@ -4,6 +4,7 @@
   var view = View('section.leaveMessages')
 
   var controller = Controller({
+    count: 0,
     messageList: null,
     form: null,
     init: function (view, controller) {
@@ -21,13 +22,14 @@
             li.innerText = `${item.name}留言 : ${item.content}`
             this.messageList.appendChild(li)
           })
+          
         })
     },
     bindEvents: function () {
       console.log(this.form)
       this.form.addEventListener('submit', (e) => {
         e.preventDefault()
-        this.saveMessage()
+        this.saveMessage(9)
       })
     },
     saveMessage: function () {
