@@ -1,3 +1,4 @@
+
 !function () {
     // 添加 offset 类
     let specialTags = document.querySelectorAll('[data-x]')
@@ -10,9 +11,6 @@
         findClosestAndRemoveOffset()
     })
 
-
-
-    
     function findClosestAndRemoveOffset() {
         let specialTags = document.querySelectorAll('[data-x]')
         let minIndex = 0
