@@ -1,0 +1,51 @@
+
+@media (max-width: 768px){
+    *{
+        padding: 0;margin: 0;box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+    }
+    .topNavBar,.mask,.banner{
+        display: none;
+    }
+    .userCard{
+        margin-top: 350px;
+        width: 100vw;
+    }
+    .userCard .pictureAndText{
+        margin: 0;
+        padding: 0;
+    }
+    .picture{
+        display: none;
+    }
+    .userCard .pictureAndText .text{
+        display: flex;
+        white-space: nowrap;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    .userCard .text .welcome{
+        width: 250px;
+    }
+    .userCard .text .selfIntroduction{
+        display: none;
+    }
+    .userCard .pictureAndText .text .into >a{
+        margin-top: 12px;
+    }
+    section.skills > ol{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    section.skills > ol>li>{
+        width: 100%;
+        display: flex;
+    }
+    section .works>ol>li>img{
+        display: none;
+    }
+}
